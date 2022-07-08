@@ -1,0 +1,141 @@
+@import "../abstract/variables";
+
+.header__container {
+    align-items: center;
+    display: flex;
+}
+
+.container__img {
+    padding: 1.6rem;
+}
+
+.header {
+    align-items: center;
+    background-color: $branco;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .container__botao {
+        display: none;
+        &:checked ~ .lista-menu {
+            display: block;
+        }
+        &:checked ~ .container__rotulo {
+            background: $azul-degrade;
+        }
+        &:checked ~ .container__rotulo > .header__menu-hamburguer {
+            background: url("../../img/Menu-Aberto.png") center center no-repeat;
+        }
+    }
+    .header__menu-hamburguer {
+        background: url("../../img/Menu.svg") center center no-repeat;
+        display: inline-block;
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .lista-menu {
+        display: none;
+        position: absolute;
+        top: 100%; //Joga a lista menu para baixo do header. O topo da .lista-menu deve estar 100% do topo do header. Ou seja o header inteiro.
+        width: 60vw;
+        .lista-menu__titulo {
+            background-color: $branco;
+            color: $laranja;
+            font-weight: 700;
+            padding: 1.6rem;
+        }
+        .lista-menu__item {
+            background-color: $branco;
+            padding: 1.6rem;
+            .lista-menu__link {
+                background: $azul-degrade;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    .container__titulo,
+    .container__texto,
+    .opcoes {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .container--transparent {
+        display: none !important;
+    }
+
+    .header {
+        .container__titulo {
+            display: block;
+            font-family: $fonte-secundaria;
+            font-size: 3rem;
+            font-weight: 400;
+            .container__titulo--negrito {
+                font-weight: 700;
+            }
+        }
+        .opcoes {
+            display: flex;
+            .lista-menu {
+                .lista-menu__item {
+                    &:hover {
+                        background: $azul-degrade;
+                    }
+                    &:hover>.lista-menu__link {
+                        -webkit-text-fill-color: $branco; // como no inicio usamos esta propriedade  agora no hover temos também que usa-la
+                    }
+                }
+                
+            }
+            .opcoes__botao {
+                display: none;
+                &:checked ~ .lista-menu {
+                    display: block;
+                    width: auto;
+                }
+                &:checked ~ .opcoes__rotulo > .opcoes__item {
+                    background: $azul-degrade;
+                    color: $branco;
+                }
+            }
+            .opcoes__item {
+                padding: 2.2rem 1.6rem;
+                text-transform: uppercase;
+                .opcoes__link {
+                    color: $preto;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .header {
+        padding: 0 3.2rem;
+        .opcoes {
+            margin-right: auto; //Enviar opcoes para esquerda
+        }
+        .header__container {
+            .container__link {
+                align-items: center;
+                color: $preto;
+                display: flex;
+                text-decoration: none;
+                .container__texto {
+                    display: block;
+                }
+                &:last-child {
+                    .container__texto {
+                        margin-left: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

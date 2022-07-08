@@ -1,0 +1,12 @@
+@import "../abstract/variables";
+
+html {
+    font-size: 62.5%; //Adicionando este %, se quiser uma fonte de 16px = 1.6rem
+}
+
+body {
+    background: $cor-de-fundo;
+    font-family: $fonte-principal;
+    font-weight: 400;
+    font-size: 1.6rem;
+}

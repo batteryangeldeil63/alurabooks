@@ -1,0 +1,83 @@
+@import "../abstract/variables";
+
+.descricao__avaliacao {
+    margin-bottom: 0.8rem;
+}
+
+.card {
+    background: $branco;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    margin: 1.6rem;
+    padding: 1.6rem;
+    .card__descricao {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.8rem;
+        .descricao__titulo {
+            color: $laranja;
+            font-weight: 700;
+        }
+        .descricao__titulo-livro {
+            color: $azul;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0.8rem 0;
+        }
+        .descricao__texto {
+            font-size: 1.4rem;
+        }
+    }
+    .card__botoes {
+        display: flex;
+        justify-content: space-between;
+        .lista__botoes {
+            display: flex;
+            .lista__botoes-item {
+                margin: 0 0.8rem;
+            }
+        }
+        .botao__ancora {
+            background-color: $laranja;
+            color: $branco;
+            font-weight: 700;
+            padding: 1.6rem 3.5rem;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .card {
+        margin: 3.2rem auto; // uma outra forma de atualizar o elemento, auto coloca margin esquerda e direita do mesmo valor.
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .card {
+        margin: 5.6rem 0 0.8rem;
+        width: 35%;
+        .card__descricao {
+            .descricao__container {
+                padding: 1.6rem;
+                .descricao__titulo {
+                    font-size: 2.4rem;
+                }
+                .descricao__titulo-livro {
+                    margin: 1.4rem 0;
+                }
+                .descricao__texto {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        .card__botoes {
+            .botao__ancora {
+                &:active {
+                    background-color: $azul;
+                }
+            }
+        }
+    }
+}
