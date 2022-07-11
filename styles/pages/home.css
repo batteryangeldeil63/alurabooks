@@ -77,7 +77,6 @@ body {
   .container--transparent {
     display: none !important;
   }
-
   .header .container__titulo {
     display: block;
     font-family: "Josefin Sans", sans-serif;
