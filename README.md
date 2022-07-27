@@ -34,13 +34,13 @@
 
 ## Introdução
 
-É um projeto de uma pagina de livraria com metodologia mobile-first. Site totalmente responsivo com estrutura de header, banner, lançamentos, mais vendidos, tópicos visitados, input para cadastro e footer.
+Projeto de website de livraria com metodologia mobile-first. Site totalmente responsivo com estrutura de header, banner, lançamentos, mais vendidos, tópicos visitados, input para cadastro e footer.
 
-Utilizei HTML5, CSS3, Sass e JavaScript. Criei a pagina observando os requisitos do [layout Figma](https://www.figma.com/file/pcLDUtKkoDPXUQ2GCEC39t/AluraBooks).
+Utilizei HTML5, CSS3, Sass e JavaScript. Criei a página observando os requisitos do [layout Figma](https://www.figma.com/file/pcLDUtKkoDPXUQ2GCEC39t/AluraBooks).
 
 <a href="#"><img src="./img/readme_img/screens.png" alt="site alurabooks mobile"></a>
 
->O site é responsivo se ajusta aos layouts de celular, tablet e desktop, utilizando as medidas:
+>O site é responsivo, se ajustando aos layouts de celular, tablet e desktop, utilizando as medidas:
 
 * :iphone: `Ate 820PX Mobile e Tablet`
 * :computer: `Entre 820PX e 1440PX Desktop Tela Pequena`
@@ -68,11 +68,11 @@ Utilizei HTML5, CSS3, Sass e JavaScript. Criei a pagina observando os requisitos
   * IDE VsCode
   * Deloy [Vercel](https://site-alurabooks.vercel.app/) e [GitHub](https://livioalvarenga.github.io/Site_Alurabooks/)
 
-  Utilizar o SASS foi um desáfio pessoal para o projeto, pois não estava no escopo do curso. Mas o fato de poder criar blocos separados e não repetir CSS foi o problema que busquei solucionar com SASS.
+  Utilizar o SASS foi um desafio pessoal para o projeto, pois não estava no escopo do curso. Mas o fato de poder criar blocos separados e não repetir CSS foi o problema que busquei solucionar com SASS.
 
 ## :email: Contato
 
-  Olá, eu sou Livio Alvarenga Engenheiro de Produção | Dev Back-end e Front-end. Sou aficcionado por tecnologia, programação, processos e planejamento, uni todas essas paixões em uma só profissão. Duvidas, sugestões e criticas são super bem vindas, segue meus contatos.
+  Olá, eu sou Livio Alvarenga, Engenheiro de Produção | Dev Back-end e Front-end. Sou aficcionado por tecnologia, programação, processos e planejamento. Uni todas essas paixões em uma só profissão. Dúvidas, sugestões e críticas são super bem vindas. Seguem meus contatos.
 
  * [www.livioalvarenga.com](https://livioalvarenga.com)
  * contato@livioalvarenga.com
@@ -87,6 +87,6 @@ Alura: [HTML e CSS: responsividade com mobile-first](https://cursos.alura.com.br
 
 ## :smile: Agradecimento especial
 
-A instrutora [Monica Hillman](https://linktr.ee/monicahillman) que lecionou um excelente curso e a [Alura](https://www.alura.com.br/). Muito Obrigado.
+Agradeço a instrutora [Monica Hillman](https://linktr.ee/monicahillman) que lecionou um excelente curso e a [Alura](https://www.alura.com.br/). Muito Obrigado.
 
 ##### _#CompartilheConhecimento_
